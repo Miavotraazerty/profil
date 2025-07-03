@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RASAMBOMANANA Miavotra</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <canvas id="matrix"></canvas>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#langues">Langues</a></li>
+            <li><a href="#interets">Centres d’intérêt</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+
+    <header>
+        <img src="{% static 'img/basket.png' %}" alt="Miavotra">
+        <h1>RASAMBOMANANA Feno Toky Miavotra Jeremiah</h1>
+        <p>Étudiant en informatique</p>
+    </header>
+    
+
+    <section id="a-propos" class="fade-in fade-delay-1">
+        <h2>À propos de moi</h2>
+        <p>Je suis étudiant en 3e année de licence informatique à la CNTEMAD. Je cherche un stage pour appliquer mes compétences techniques dans un environnement stimulant.</p>
+    </section>
+
+    <section id="competences" class="fade-in fade-delay-2">
+        <h2>Compétences</h2>
+        <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>MySQL, PostgreSQL, SQLite</li>
+            <li>Django</li>
+        </ul>
+    </section>
+
+    <section id="projets" class="fade-in fade-delay-3">
+        <h2>Projets académiques</h2>
+        <ul>
+            <li>Développement d’un site web avec Django (projet universitaire)</li>
+            <li>Création d’un mini logiciel de gestion avec Python</li>
+        </ul>
+    </section>
+    
+    <section id="formation" class="fade-in fade-delay-4">
+        <h2>Formation</h2>
+        <ul>
+            <li>Licence en Informatique – CNTEMAD (2023-2025)</li>
+            <li>DTS en Informatique – CNTEMAD (2021-2022)</li>
+            <li>Baccalauréat Série D – Lycée Sainte Famille Anosivavaka (2020)</li>
+        </ul>
+    </section>
+    
+    <section id="langues" class="fade-in fade-delay-5">
+        <h2>Langues</h2>
+        <ul>
+            <li>Malagasy : Langue maternelle</li>
+            <li>Français : Intermédiaire</li>
+            <li>Anglais : Intermédiaire</li>
+        </ul>
+    </section>
+
+    <section id="interets" class="fade-in fade-delay-6">
+        <h2>Centres d’intérêt</h2>
+        <div class="interets-grid">
+            <div class="interet-card">🏀 Basket-ball</div>
+            <div class="interet-card">🥋 Kick Boxing</div>
+            <div class="interet-card">🎮 Jeux vidéo</div>
+        </div>
+    </section>
+    
+    
+
+    <section id="contact" class="fade-in fade-delay-7">
+        <h2>Contact</h2>
+        <p>Email : rasambomananam@gmail.com</p>
+        <p>Téléphone : 038 37 455 39</p>
+        
+        <a href="{% static 'pdf/Miavotra_CV.pdf' %}" download class="btn-cv">
+            📄 Télécharger mon CV
+        </a><br><br>
+    
+        <a href="https://www.linkedin.com/in/miavotra-rasambomanana-0084532aa/" target="_blank" class="btn-linkedin">
+            🔗 Voir mon profil LinkedIn
+        </a>
+    </section>
+    <script src="{% static 'js/annimations.js' %}"></script>
+
+</body>
+</html>
