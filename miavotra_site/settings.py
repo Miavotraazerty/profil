@@ -25,8 +25,6 @@ SECRET_KEY = 'django-insecure-at=87-5+l9r16d062xp8)g$4u72mje43q6#%omvk74@tfmo9=a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -119,6 +117,10 @@ USE_TZ = True
 STATIC_URL = 'static/'
 import os
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'profil/static')]
+
+ALLOWED_HOSTS = ['.onrender.com', '127.0.0.1', 'localhost']
+
+MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
 
 
 # Default primary key field type
